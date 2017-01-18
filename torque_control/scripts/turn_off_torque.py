@@ -30,7 +30,7 @@ pub = rospy.Publisher('/robot/limb/right/suppress_gravity_compensation', Empty)
 
 ## WHERE THE ACTUAL WORK HAPPENS
 now = time.time()
-while time.time() - now < 4:
+while time.time() - now < 20:
     limb.set_joint_torques(torque)
     pub.publish(msg)
     time.sleep(.1)

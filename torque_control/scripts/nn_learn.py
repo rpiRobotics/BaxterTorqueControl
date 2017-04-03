@@ -17,6 +17,7 @@ from sklearn.externals import joblib
 import copy
 
 def get_model_comp(q):
+    """ Use a Matlab-identified model to produce an estimated torque given a set of angles"""
     q2 = q[1]
     q3 = q[2]
     q4 = q[3]

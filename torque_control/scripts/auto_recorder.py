@@ -121,5 +121,5 @@ class PControlNode:
             self._record_data()
             r.sleep()
 
-my_node = PControlNode('/home/cats/cunnia3/nasa_ws/data/auto_data_2_27.csv')
+my_node = PControlNode('./auto_data.csv')
 my_node.spin()
